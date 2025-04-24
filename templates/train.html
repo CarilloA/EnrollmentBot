@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Train the Chatbot</title> 
+        <style> 
+            body { font-family: Arial; padding: 20px; background: #f0f0f0; } 
+            form { background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: auto; } input, 
+            textarea { width: 100%; margin-bottom: 10px; padding: 8px; border-radius: 4px; border: 1px solid #ccc; } 
+            button { padding: 10px 20px; background: green; color: white; border: none; border-radius: 4px; } 
+        </style> 
+    </head> 
+    <body> 
+        <h2>Add New Intent</h2> 
+        <form method="POST" action="/submit_intent"> 
+            <label>Intent Tag:</label> 
+            <input type="text" name="tag" required>
+            <label>Patterns (one per line):</label>
+            <textarea name="patterns" rows="4" required></textarea>
+        
+            <label>Responses (one per line):</label>
+            <textarea name="responses" rows="4" required></textarea>
+        
+            <button type="submit">Train Bot</button>
+        </form>
+    </body> 
+</html>        
