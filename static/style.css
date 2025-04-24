@@ -46,4 +46,31 @@ body {
     text-align: left;
     color: green;
   }
-  
+
+  /* persistent menu */
+  #menu { 
+    margin: 20px; 
+    padding: 10px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    width: fit-content; 
+    background-color: #f9f9f9; 
+  } 
+  #menu h3 { 
+    margin-top: 0; 
+  } 
+  .faq-button { 
+    display: block; 
+    margin: 5px 0; 
+    padding: 8px 12px; 
+    border: none; 
+    background-color: #007bff; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: left; 
+    width: 100%; 
+  } 
+  .faq-button:hover { 
+    background-color: #0056b3; 
+  }

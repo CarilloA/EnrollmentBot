@@ -6,15 +6,33 @@
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+
   <div class="chat-container">
     <a href="train">Train</a>
     <h1>Enrollment Chatbot</h1>
-    <div id="chatbox"></div>
+    <div id="chatbox">
+      <div id="menu"> <!-- THIS IS THE PERSISTENT MENU -->
+        <h3>📋 Frequently Asked Questions</h3> 
+        <button class="faq-button" onclick="sendFAQ('How do I enroll?')">How do I enroll?</button> 
+        <button class="faq-button" onclick="sendFAQ('What are the requirements?')">What are the requirements?</button> 
+        <button class="faq-button" onclick="sendFAQ('What is the enrollment deadline?')">What is the enrollment deadline?</button> 
+        <button class="faq-button" onclick="sendFAQ('Where is the registrar\'s office?')">Where is the registrar's office?</button> 
+      </div>
+    </div>
     <input type="text" id="userInput" placeholder="Ask me anything about enrollment...">
     <button onclick="sendMessage()">Send</button>
   </div>
 
   <script>
+    function sendFAQ(question) { 
+      fetch("/get", { 
+        method: "POST", 
+        body: JSON.stringify({ message: question }), 
+        headers: { "Content-Type": "application/json" } }) .then(response => response.json()) .then(data => { appendMessage("You", question); 
+        appendMessage("Bot", data.reply); 
+      }); 
+    }
+
     function appendMessage(sender, message) {
       const chatbox = document.getElementById("chatbox");
       const messageDiv = document.createElement("div");
