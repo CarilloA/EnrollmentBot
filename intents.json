@@ -1,0 +1,35 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Is anyone there?", "Good day"],
+        "responses": ["Hello! How can I assist with your enrollment today?"]
+      },
+      {
+        "tag": "requirements",
+        "patterns": ["What are the enrollment requirements?", "Requirements for admission?"],
+        "responses": ["You need your transcript, ID, and completed application form."]
+      },
+      {
+        "tag": "deadline",
+        "patterns": ["When is the enrollment deadline?", "Last day to enroll?"],
+        "responses": ["The deadline for enrollment is June 30."]
+      },
+      {
+        "tag": "enroll_course",
+        "patterns": ["I want to enroll", "How can I enroll?", "Sign me up"],
+        "responses": ["Sure! What course would you like to enroll in?"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "Appreciate it"],
+        "responses": ["You're welcome!"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later"],
+        "responses": ["Goodbye! Have a great day."]
+      }
+    ]
+  }
+  
