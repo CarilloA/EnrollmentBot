@@ -1,5 +1,5 @@
-to activate the virtual environment(venv): python -m venv venv
-                                           venv\Scripts\activate
+to activate the virtual environment(venv): >>>python -m venv venv
+                                           >>>venv\Scripts\activate
                                            
 After updating the intents.py, code python train.py in the terminal to start training the bot
 
