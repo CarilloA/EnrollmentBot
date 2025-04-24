@@ -39,7 +39,7 @@
                 "What are the programs offered?"
             ],
             "responses": [
-                "Sure! We offer the following programs: Computer Science, Information Technology, and Computer Engineering."
+                "Sure! We offer the following programs: \nBachelor of Science in Computer Science, \nBachelor of Science in Information Technology, \nBachelor of Science in Computer Engineering, \nAssociate in Computer Technology with Specialization in Multimedia and Web Development, and \nApplied Software Engineering."
             ]
         },
         {
