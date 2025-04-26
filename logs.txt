@@ -1,0 +1,82 @@
+2025-04-25T12:33:04.050012 | User: How do I enroll? | Bot: To enroll, visit our website and complete the enrollment form.
+2025-04-25T12:33:06.526961 | User: hi | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T12:33:24.584110 | User: how much is the fee for this sem? | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T12:33:56.341628 | User: how much is the tuition fee? | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T12:35:27.195100 | User: ok | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T12:47:17.268631 | User: How do I enroll? | Bot: To enroll, visit our website and complete the enrollment form.
+2025-04-25T12:47:20.142416 | User: hi | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T12:47:33.955631 | User: how much is the tuition fee for this sem? | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T12:48:09.098937 | User: Where is the registrar's office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T12:48:13.301117 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-25T12:49:22.170628 | User: ok | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T12:51:40.183383 | User: your response is helpful | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T12:52:39.779628 | User: good | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T12:54:46.240362 | User: Where is the registrar's office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T12:55:24.830262 | User: your response is not helpful, can you improve it? | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T12:55:37.615873 | User: i said its bad | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T12:55:51.959149 | User: ok | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T12:57:31.037232 | User: Where is the registrar's office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T12:58:07.056094 | User: your response is not helpful | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T12:59:13.555792 | User: good | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:05:36.704751 | User: Where is the registrar's office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:05:39.442304 | User: bad | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:06:09.368739 | User: can i apply late? | Bot: Late applications are accepted with a penalty. Please contact the admissions office for more details.
+2025-04-25T13:06:20.441963 | User: where is the registrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:06:27.773543 | User: bad response | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:08:07.760736 | User: where is the registrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:08:12.655158 | User: bad response | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:13:39.131207 | User: where is the registrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:13:46.337706 | User: bad response | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:17:29.170362 | User: where is the resgitrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:20:27.187323 | User: where is the registrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:20:32.058325 | User: bad response | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:21:30.373662 | User: where is the registrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:21:36.767660 | User: bad response | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:27:32.214300 | User: where is the registrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:27:34.974681 | User: bad | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:28:27.955058 | User: how much is the tuition fee? | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:28:30.581700 | User: bad | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:33:13.858360 | User: can i apply late | Bot: Late applications are accepted with a penalty. Please contact the admissions office for more details.
+2025-04-25T13:33:45.794886 | User: good | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:35:02.829102 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-25T13:40:42.474699 | User: where is the registrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:40:46.244674 | User: bad | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-25T13:48:23.777668 | User: hi | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:48:32.632070 | User: where is the registrars office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-25T13:48:35.867887 | User: bad | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-26T16:49:33.490880 | User: How do I enroll? | Bot: To enroll, visit our website and complete the enrollment form.
+2025-04-26T16:49:35.436425 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-26T16:49:37.380337 | User: What is the enrollment deadline? | Bot: The deadline for enrollment is June 30.
+2025-04-26T16:49:38.897029 | User: Where is the registrar's office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T16:49:47.279670 | User: can i enroll late? | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-26T16:50:02.464780 | User: i said can i apply for late enrollment? | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-26T16:50:17.158086 | User: i said can i apply late? | Bot: Late applications are accepted with a penalty. Please contact the admissions office for more details.
+2025-04-26T16:50:49.054322 | User: ok | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-26T16:50:56.552956 | User: bye | Bot: Goodbye! Have a great day.
+2025-04-26T17:41:18.742159 | User: what is the tuition fee for this sem? | Bot: I'm sorry, I didn't understand that. Please try again.
+2025-04-26T18:00:52.161601 | User: How do I enroll? | Bot: To enroll, visit our website and complete the enrollment form.
+2025-04-26T18:00:53.096198 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-26T18:00:54.257457 | User: What is the enrollment deadline? | Bot: The deadline for enrollment is June 30.
+2025-04-26T18:00:55.148729 | User: Where is the registrar's office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T18:01:04.813743 | User: hello! can i apply late? | Bot: Late applications are accepted with a penalty. Please contact the admissions office for more details.
+2025-04-26T18:17:24.421897 | User: How do I enroll? | Bot: To enroll, visit our website and complete the enrollment form.
+2025-04-26T18:17:35.754418 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-26T18:17:42.011303 | User: What is the enrollment deadline? | Bot: The deadline for enrollment is June 30.
+2025-04-26T18:20:19.873361 | User: quit | Bot: I'm not sure I understand. Can you please rephrase?
+2025-04-26T18:21:17.680286 | User: hi | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T18:21:26.052542 | User: hello | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T18:21:29.077755 | User: hi | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T18:21:31.687592 | User: hello | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T18:21:52.783785 | User: good day | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T18:27:00.590069 | User: hi | Bot: Hi there! What can I help you with regarding enrollment?
+2025-04-26T19:11:57.452882 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-26T19:13:10.769143 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-26T19:13:42.613279 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-26T19:13:48.525116 | User: What is the enrollment deadline? | Bot: The deadline for enrollment is June 30.
+2025-04-26T19:13:49.833853 | User: Where is the registrar's office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T19:15:26.820350 | User: How do I enroll? | Bot: To enroll, visit our website and complete the enrollment form.
+2025-04-26T19:15:32.598009 | User: What are the requirements? | Bot: You need your transcript, ID, and completed application form.
+2025-04-26T19:15:33.506603 | User: What is the enrollment deadline? | Bot: The deadline for enrollment is June 30.
+2025-04-26T19:15:34.569918 | User: Where is the registrar's office? | Bot: Hello! How can I assist with your enrollment today?
+2025-04-26T19:15:42.774872 | User: can i apply late? | Bot: Late applications are accepted with a penalty. Please contact the admissions office for more details.
+2025-04-26T19:15:57.279744 | User: how much is the tuition fee? | Bot: I'm not sure I understand. Can you please rephrase?

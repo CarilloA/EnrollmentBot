@@ -1,91 +1,68 @@
-import json
+# Import necessary libraries
+import nltk
+import numpy as np
 import torch
-import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader
-from nltk_utils import tokenize, stem, bag_of_words
-from model import NeuralNet
+from sklearn.preprocessing import LabelEncoder
+from model import NeuralNet     # Custom neural network model
+from nltk_utils import tokenize, bag_of_words  # NLP utility functions
+import json
 
-# Load the updated intents.json file dynamically
-with open('intents.json', 'r') as f:
-    intents = json.load(f)
+# Download NLTK tokenizer model if not already downloaded
+nltk.download('punkt')
 
-all_words = []
-tags = []
-xy = []
+# Function to train the chatbot model
+def train_model():
+    # Load intents file (contains patterns and responses)
+    with open("intents.json", "r") as f:
+        intents = json.load(f)
 
-# Loop through the intents to gather words and tags
-for intent in intents['intents']:
-    tag = intent['tag']
-    tags.append(tag)
-    for pattern in intent['patterns']:
-        # pattern = pattern.strip().replace('\r', '')  # this Strip whitespace and remove \r
-        w = tokenize(pattern)
-        all_words.extend(w)
-        xy.append((w, tag))
+    all_patterns = []   # List to store tokenized patterns
+    all_tags = []   # List to store corresponding tags
 
-ignore_words = ['?', '.', '!']
-all_words = sorted(set(stem(w) for w in all_words if w not in ignore_words))
-tags = sorted(set(tags))
+    # Iterate over each intent in the intents file
+    for intent in intents["intents"]:
+        for pattern in intent["patterns"]:
+            words = tokenize(pattern)  # Tokenize each pattern into words
+            all_patterns.append(words)  # Store tokenized pattern
+            all_tags.append(intent["tag"])  # Store corresponding tag
 
-X_train = []
-y_train = []
+    # Prepare the vocabulary (all unique words) for training
+    all_words = sorted(set(w for pattern in all_patterns for w in pattern))
 
-# Create the training data (bag of words)
-for (pattern_sentence, tag) in xy:
-    bag = bag_of_words(pattern_sentence, all_words)
-    X_train.append(bag)
-    y_train.append(tags.index(tag))
+    # Create input feature vectors (bag of words) for each pattern
+    X_train = [bag_of_words(pattern, all_words) for pattern in all_patterns]
 
-X_train = torch.tensor(X_train, dtype=torch.float32)
-y_train = torch.tensor(y_train, dtype=torch.long)
+    # Encode the tags into numerical labels
+    label_encoder = LabelEncoder()
+    y_train = label_encoder.fit_transform(all_tags)
 
-# Dataset class
-class ChatDataset(Dataset):
-    def __init__(self):
-        self.n_samples = len(X_train)
-        self.x_data = X_train
-        self.y_data = y_train
+    # Convert training data to numpy arrays
+    X_train = np.array(X_train)
+    y_train = np.array(y_train)
 
-    def __getitem__(self, index):
-        return self.x_data[index], self.y_data[index]
+    # Define the size of input, hidden, and output layers
+    input_size = len(X_train[0])   # No. of input features (words)
+    hidden_size = 8    # No. of neurons in hidden layer
+    output_size = len(label_encoder.classes_)  # No. of output classes (tags)
 
-    def __len__(self):
-        return self.n_samples
+    # Initialize the neural network model
+    model = NeuralNet(input_size, hidden_size, output_size)
 
-# Hyperparameters for the model
-batch_size = 8
-hidden_size = 8
-input_size = len(all_words)
-output_size = len(tags)
-learning_rate = 0.001
-num_epochs = 1000
+    # Train the model using the training data
+    model.train_model(X_train, y_train)
 
-dataset = ChatDataset()
-train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)
+    # Save the trained model and related metadata to a file
+    torch.save({
+        "input_size": input_size,
+        "hidden_size": hidden_size,
+        "output_size": output_size,
+        "all_words": all_words,
+        "tags": label_encoder.classes_,
+        "model_state": model.state_dict(),  # Save model parameters
+    }, "data.pth")
 
-# Initialize the model, loss function, and optimizer
-model = NeuralNet(input_size, hidden_size, output_size)
-criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    print("Model training complete!")  # Print completion message
 
-# Training loop
-for epoch in range(num_epochs):
-    for words, labels in train_loader:
-        outputs = model(words)
-        loss = criterion(outputs, labels)
-
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-
-# Save the trained model
-torch.save({
-    "model_state": model.state_dict(),
-    "input_size": input_size,
-    "output_size": output_size,
-    "hidden_size": hidden_size,
-    "all_words": all_words,
-    "tags": tags
-}, "data.pth")
-
-print("Training complete.")
+# Entry point of the script
+if __name__ == "__main__":
+    train_model()

@@ -3,67 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <title>Enrollment Chatbot</title>
+  <!-- Link to external CSS file for styling -->
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
   <div class="chat-container">
+    <!-- Link to training page (for model retraining if needed) -->
     <a href="train">Train</a>
+
+    <!-- Chatbot title -->
     <h1>Enrollment Chatbot</h1>
+
+    <!-- Chatbox area where chat messages will appear -->
     <div id="chatbox">
-      <div id="menu"> <!-- THIS IS THE PERSISTENT MENU -->
+
+      <!-- Persistent FAQ Menu -->
+      <div id="menu">
         <h3>📋 Frequently Asked Questions</h3> 
+        <!-- FAQ buttons to quickly send predefined questions -->
         <button class="faq-button" onclick="sendFAQ('How do I enroll?')">How do I enroll?</button> 
         <button class="faq-button" onclick="sendFAQ('What are the requirements?')">What are the requirements?</button> 
         <button class="faq-button" onclick="sendFAQ('What is the enrollment deadline?')">What is the enrollment deadline?</button> 
         <button class="faq-button" onclick="sendFAQ('Where is the registrar\'s office?')">Where is the registrar's office?</button> 
       </div>
     </div>
+
+    <!-- Input field for typing user questions -->
     <input type="text" id="userInput" placeholder="Ask me anything about enrollment...">
+    <!-- Button to manually send a message -->
     <button onclick="sendMessage()">Send</button>
   </div>
 
   <script>
+    // Function to handle sending an FAQ question
     function sendFAQ(question) { 
-      fetch("/get", { 
-        method: "POST", 
-        body: JSON.stringify({ message: question }), 
-        headers: { "Content-Type": "application/json" } }) .then(response => response.json()) .then(data => { appendMessage("You", question); 
-        appendMessage("Bot", data.reply); 
-      }); 
+        fetch("/get", { 
+            method: "POST", 
+            body: JSON.stringify({ message: question }), // Send selected FAQ question
+            headers: { "Content-Type": "application/json" } 
+        }) 
+        .then(response => response.json()) 
+        .then(data => { 
+            appendMessage("You", question);   // Display user's question
+            appendMessage("Bot", data.reply); // Display bot's response
+        }); 
     }
 
+    // Function to append a new message to the chatbox
     function appendMessage(sender, message) {
-      const chatbox = document.getElementById("chatbox");
-      const messageDiv = document.createElement("div");
-      messageDiv.className = sender;
-      messageDiv.textContent = `${sender}: ${message}`;
-      chatbox.appendChild(messageDiv);
-      chatbox.scrollTop = chatbox.scrollHeight;
+        const chatbox = document.getElementById("chatbox");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = sender;    // Assign class based on sender (You/Bot)
+        messageDiv.textContent = `${sender}: ${message}`; // Format message
+        chatbox.appendChild(messageDiv);      // Add message to chatbox
+        chatbox.scrollTop = chatbox.scrollHeight;     // Auto-scroll to latest message
     }
 
+    // Function to send a user-typed message
     function sendMessage() {
-      const inputField = document.getElementById("userInput");
-      const message = inputField.value;
-      if (!message.trim()) return;
+        const inputField = document.getElementById("userInput");
+        const message = inputField.value;
+        if (!message.trim()) return;        // Do nothing if input is empty
 
-      appendMessage("You", message);
-      inputField.value = "";
+        appendMessage("You", message);     // Show user's message immediately
+        inputField.value = "";            // Clear input field
 
-      fetch("/get", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: message })
-      })
-      .then(response => response.json())
-      .then(data => {
-        appendMessage("Bot", data.reply);
-      });
+        fetch("/get", {                  // Send message to backend
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: message })
+        })
+        .then(response => response.json())
+        .then(data => {
+            appendMessage("Bot", data.reply);   // Show bot's reply
+        });
     }
 
+    // Allow sending a message by pressing "Enter" key
     document.getElementById("userInput").addEventListener("keypress", function(e) {
-      if (e.key === "Enter") sendMessage();
+        if (e.key === "Enter") sendMessage();
     });
   </script>
+
 </body>
 </html>
