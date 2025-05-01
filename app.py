@@ -8,6 +8,9 @@ from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 import datetime
 import os
+from tag_suggester import TagSuggester
+
+suggester = TagSuggester()
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -22,7 +25,7 @@ def load_intents_and_model():
 
     # Load model data
     FILE = "data.pth"
-    data = torch.load(FILE)
+    data = torch.load(FILE, weights_only=False)  # <-- Fix is here!
 
     # Extract necessary data
     input_size = data["input_size"]
@@ -39,7 +42,9 @@ def load_intents_and_model():
 
     return intents, model, all_words, tags
 
+
 # Load model and intents when the app starts
+global intents, model, all_words, tags
 intents, model, all_words, tags = load_intents_and_model()
 
 # Function to generate a chatbot response based on user message
@@ -80,11 +85,26 @@ def get_fallback_response(msg):
             return random.choice(intent["responses"])
     return "I'm not sure I understand. Can you please rephrase?"
 
-# Function to log interactions to a file
 def log_interaction(user_input, bot_response):
-    with open("logs.txt", "a") as f:
-        timestamp = datetime.datetime.now().isoformat()
-        f.write(f"{timestamp} | User: {user_input} | Bot: {bot_response}\n")
+    timestamp = datetime.datetime.now().isoformat()
+
+    # Logs
+    logs_path = "logs.json"
+    if os.path.exists(logs_path):
+        with open(logs_path, "r") as f:
+            logs_data = json.load(f)
+    else:
+        logs_data = {"conversations": []}
+    
+    logs_data["conversations"].append({
+        "timestamp": timestamp,
+        "user": user_input,
+        "bot": bot_response
+    })
+    
+    with open(logs_path, "w") as f:
+        json.dump(logs_data, f, indent=4)
+
 
 # Function to log unknown queries for future improvements
 def log_unknown_query(user_input):
@@ -112,20 +132,78 @@ def log_unknown_query(user_input):
 
     print(f"[DEBUG] Saved unknown query to {unknown_path}")
 
-# Function to clean duplicate unknown queries
-def clean_unknown_queries():
-    with open("unknown_queries.json", "r") as f:
+def remove_known_questions_from_unknown():
+    # Load intents
+    with open("intents.json", "r") as f:
+        intents_data = json.load(f)
+
+    # Gather all patterns from intents
+    known_patterns = set()
+    for intent in intents_data["intents"]:
+        for pattern in intent["patterns"]:
+            known_patterns.add(pattern.strip().lower())
+
+    # Load unknown queries
+    unknown_path = "unknown_queries.json"
+    if os.path.exists(unknown_path):
+        with open(unknown_path, "r") as f:
+            unknown_data = json.load(f)
+    else:
+        print("[DEBUG] No unknown_queries.json file found.")
+        return
+
+    # Filter unknown queries
+    filtered_queries = []
+    for query in unknown_data.get("queries", []):
+        question_text = query["question"].strip().lower()
+        if question_text not in known_patterns:
+            filtered_queries.append(query)
+
+    # Save back the cleaned unknown queries
+    with open(unknown_path, "w") as f:
+        json.dump({"queries": filtered_queries}, f, indent=4)
+
+    print(f"[DEBUG] Removed {len(unknown_data.get('queries', [])) - len(filtered_queries)} known queries from unknown_queries.json.")
+
+@app.route("/clean_unknowns")
+def clean_unknowns():
+    remove_known_questions_from_unknown()
+    return "Unknown queries cleaned successfully!"
+
+# Admin page
+@app.route("/admin")
+def admin_page():
+    suggested_tags = suggester.suggest_tags(n_clusters=5)
+    return render_template("admin.html", suggested_tags=suggested_tags)
+
+@app.route("/approve_tag", methods=["POST"])
+def approve_tag():
+    tag = request.form["tag"]
+    examples = request.form["examples"].split("||")
+    response = request.form["response"]
+
+    with open("intents.json", "r") as f:
         data = json.load(f)
-    
-    seen = set()
-    unique_queries = []
-    for q in data["queries"]:
-        if q["question"] not in seen:
-            seen.add(q["question"])
-            unique_queries.append(q)
-    
-    with open("unknown_queries.json", "w") as f:
-        json.dump({"queries": unique_queries}, f, indent=4)
+
+    new_intent = {
+        "tag": tag,
+        "patterns": examples,
+        "responses": [response]  # <-- save admin's entered response
+    }
+
+    data["intents"].append(new_intent)
+
+    with open("intents.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+    # Optionally retrain model
+    subprocess.call(["python", "train.py"])
+
+    # Reload intents and model
+    global intents, model, all_words, tags
+    intents, model, all_words, tags = load_intents_and_model()
+
+    return redirect("/admin")
 
 # Flask route: Home page
 @app.route("/")
@@ -178,4 +256,5 @@ def submit_intent():
 
 # Run Flask app
 if __name__ == "__main__":
+    remove_known_questions_from_unknown()
     app.run(debug=True)

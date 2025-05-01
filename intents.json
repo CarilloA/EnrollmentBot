@@ -84,6 +84,16 @@
             "responses": [
                 "Late applications are accepted with a penalty. Please contact the admissions office for more details."
             ]
+        },
+        {
+            "tag": "tuition fee",
+            "patterns": [
+                "how much is the tuition fee?",
+                "how much is the tuition fees?"
+            ],
+            "responses": [
+                "Tuition fee ranges from 25,000-35,000"
+            ]
         }
     ]
 }

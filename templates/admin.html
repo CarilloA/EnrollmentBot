@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Review Suggestions</title>
+</head>
+<body>
+    <h2>Suggested New Tags</h2>
+    {% if suggested_tags %}
+    {% for tag in suggested_tags %}
+        <div class="suggestion">
+        <h3>Suggested Tag: {{ tag.tag }}</h3>
+        <p>Question Patterns:</p>
+        <ul>
+            {% for ex in tag.examples %}
+            <li>{{ ex }}</li>
+            {% endfor %}
+        </ul>
+        <form action="/approve_tag" method="post">
+            <input type="hidden" name="tag" value="{{ tag.tag }}">
+            <input type="hidden" name="examples" value="{{ tag.examples | join('||') }}">
+            
+            <label for="response">Responses (one per line):</label><br>
+            <textarea name="response" rows="3" cols="50" required placeholder="Enter the bot's reply..."></textarea><br><br>
+            
+            <button type="submit">Approve</button>
+          </form>          
+        </div>
+    {% endfor %}
+    {% else %}
+    <p>No tag suggestions yet.</p>
+    {% endif %}
+
+    <!-- <h1>Review User Inputs and Suggested Tags</h1>
+    <form action="/approve_training" method="post">
+        {% for conv in conversations %}
+            <div style="margin-bottom:20px;">
+                <p><strong>User:</strong> {{ conv['user'] }}</p>
+                <p><strong>Suggested Tag:</strong> {{ conv['suggested_tag'] }} (Confidence: {{ conv['confidence']*100 | round(2) }}%)</p>
+                <label>Approve and add to intent?</label>
+                <input type="checkbox" name="approve_{{ loop.index0 }}">
+                <input type="hidden" name="user_input_{{ loop.index0 }}" value="{{ conv['user'] }}">
+                <input type="hidden" name="suggested_tag_{{ loop.index0 }}" value="{{ conv['suggested_tag'] }}">
+            </div>
+        {% endfor %}
+        <input type="hidden" name="total" value="{{ conversations|length }}">
+        <button type="submit">Submit</button>
+    </form> -->
+</body>
+</html>

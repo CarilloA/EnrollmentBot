@@ -1,108 +1,84 @@
 {
     "queries": [
         {
-            "timestamp": "2025-04-25T12:16:47.763993",
-            "question": "how much is the tuition fee?"
-        },
-        {
             "timestamp": "2025-04-25T12:33:24.582847",
             "question": "how much is the fee for this sem?"
-        },
-        {
-            "timestamp": "2025-04-25T12:33:56.340768",
-            "question": "how much is the tuition fee?"
-        },
-        {
-            "timestamp": "2025-04-25T12:35:27.193542",
-            "question": "ok"
-        },
-        {
-            "timestamp": "2025-04-25T12:47:33.954291",
-            "question": "how much is the tuition fee for this sem?"
-        },
-        {
-            "timestamp": "2025-04-25T12:49:22.169592",
-            "question": "ok"
-        },
-        {
-            "timestamp": "2025-04-25T12:55:24.829233",
-            "question": "your response is not helpful, can you improve it?"
-        },
-        {
-            "timestamp": "2025-04-25T12:55:37.614803",
-            "question": "i said its bad"
-        },
-        {
-            "timestamp": "2025-04-25T12:55:51.958155",
-            "question": "ok"
-        },
-        {
-            "timestamp": "2025-04-25T13:05:39.440514",
-            "question": "bad"
-        },
-        {
-            "timestamp": "2025-04-25T13:06:27.772228",
-            "question": "bad response"
-        },
-        {
-            "timestamp": "2025-04-25T13:08:12.654105",
-            "question": "bad response"
-        },
-        {
-            "timestamp": "2025-04-25T13:13:46.336539",
-            "question": "bad response"
-        },
-        {
-            "timestamp": "2025-04-25T13:20:32.056615",
-            "question": "bad response"
-        },
-        {
-            "timestamp": "2025-04-25T13:21:36.766024",
-            "question": "bad response"
-        },
-        {
-            "timestamp": "2025-04-25T13:27:34.973251",
-            "question": "bad"
-        },
-        {
-            "timestamp": "2025-04-25T13:28:27.953319",
-            "question": "how much is the tuition fee?"
-        },
-        {
-            "timestamp": "2025-04-25T13:28:30.580867",
-            "question": "bad"
-        },
-        {
-            "timestamp": "2025-04-25T13:40:46.243780",
-            "question": "bad"
-        },
-        {
-            "timestamp": "2025-04-25T13:48:35.866371",
-            "question": "bad"
         },
         {
             "timestamp": "2025-04-26T16:49:47.240788",
             "question": "can i enroll late?"
         },
         {
-            "timestamp": "2025-04-26T16:50:02.463113",
-            "question": "i said can i apply for late enrollment?"
+            "timestamp": "2025-04-26T22:14:40.060852",
+            "question": "how much is the tuition fee this sem?"
         },
         {
-            "timestamp": "2025-04-26T16:50:49.052463",
-            "question": "ok"
+            "timestamp": "2025-04-26T22:44:05.302990",
+            "question": "how much is the tuition fee for this sem?"
         },
         {
-            "timestamp": "2025-04-26T17:41:18.740428",
-            "question": "what is the tuition fee for this sem?"
+            "timestamp": "2025-04-26T22:53:06.501014",
+            "question": "this sem, how much is the tuition fee?"
         },
         {
-            "timestamp": "2025-04-26T18:20:19.871949",
-            "question": "quit"
+            "timestamp": "2025-04-26T23:09:07.391354",
+            "question": "tuition fee"
         },
         {
-            "timestamp": "2025-04-26T19:15:57.277696",
-            "question": "how much is the tuition fee?"
+            "timestamp": "2025-04-26T23:09:11.557353",
+            "question": "enroll"
+        },
+        {
+            "timestamp": "2025-04-26T23:09:51.853207",
+            "question": "tuition fee for this sem?"
+        },
+        {
+            "timestamp": "2025-04-26T23:10:24.157330",
+            "question": "tuition fee for this sem"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:08.736479",
+            "question": "How do I enroll?"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:09.075949",
+            "question": "What are the requirements?"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:14.972618",
+            "question": "can i apply late"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:10.236577",
+            "question": "How do I enroll?"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:11.173259",
+            "question": "What are the requirements?"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:12.024024",
+            "question": "What is the enrollment deadline?"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:12.936295",
+            "question": "Where is the registrar's office?"
+        },
+        {
+            "timestamp": "2025-05-01T20:25:12.815854",
+            "question": "How do I enroll?"
+        },
+        {
+            "timestamp": "2025-05-01T20:25:13.220074",
+            "question": "What are the requirements?"
+        },
+        {
+            "timestamp": "2025-05-01T20:25:13.866898",
+            "question": "What is the enrollment deadline?"
+        },
+        {
+            "timestamp": "2025-05-01T20:25:14.607456",
+            "question": "Where is the registrar's office?"
         }
     ]
 }

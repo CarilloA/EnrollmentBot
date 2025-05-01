@@ -1,0 +1,259 @@
+{
+    "conversations": [
+        {
+            "timestamp": "2025-04-26T22:13:16.085280",
+            "user": "How do I enroll?",
+            "bot": "To enroll, visit our website and complete the enrollment form."
+        },
+        {
+            "timestamp": "2025-04-26T22:13:18.324759",
+            "user": "What are the requirements?",
+            "bot": "You need your transcript, ID, and completed application form."
+        },
+        {
+            "timestamp": "2025-04-26T22:13:19.401901",
+            "user": "What is the enrollment deadline?",
+            "bot": "The deadline for enrollment is June 30."
+        },
+        {
+            "timestamp": "2025-04-26T22:13:20.253633",
+            "user": "Where is the registrar's office?",
+            "bot": "Hello! How can I assist with your enrollment today?"
+        },
+        {
+            "timestamp": "2025-04-26T22:14:21.583402",
+            "user": "how much is the tuition fees?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T22:14:40.061979",
+            "user": "how much is the tuition fee this sem?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T22:25:11.296959",
+            "user": "How do I enroll?",
+            "bot": "To enroll, visit our website and complete the enrollment form."
+        },
+        {
+            "timestamp": "2025-04-26T22:25:11.847500",
+            "user": "What are the requirements?",
+            "bot": "You need your transcript, ID, and completed application form."
+        },
+        {
+            "timestamp": "2025-04-26T22:25:12.636078",
+            "user": "What is the enrollment deadline?",
+            "bot": "The deadline for enrollment is June 30."
+        },
+        {
+            "timestamp": "2025-04-26T22:25:13.342862",
+            "user": "Where is the registrar's office?",
+            "bot": "Hello! How can I assist with your enrollment today?"
+        },
+        {
+            "timestamp": "2025-04-26T22:43:48.733573",
+            "user": "How do I enroll?",
+            "bot": "To enroll, visit our website and complete the enrollment form."
+        },
+        {
+            "timestamp": "2025-04-26T22:43:49.693053",
+            "user": "What are the requirements?",
+            "bot": "You need your transcript, ID, and completed application form."
+        },
+        {
+            "timestamp": "2025-04-26T22:43:50.612797",
+            "user": "What is the enrollment deadline?",
+            "bot": "The deadline for enrollment is June 30."
+        },
+        {
+            "timestamp": "2025-04-26T22:44:05.303893",
+            "user": "how much is the tuition fee for this sem?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T22:51:46.517824",
+            "user": "How do I enroll?",
+            "bot": "To enroll, visit our website and complete the enrollment form."
+        },
+        {
+            "timestamp": "2025-04-26T22:51:47.044249",
+            "user": "What are the requirements?",
+            "bot": "You need your transcript, ID, and completed application form."
+        },
+        {
+            "timestamp": "2025-04-26T22:51:47.779104",
+            "user": "Where is the registrar's office?",
+            "bot": "Hi there! What can I help you with regarding enrollment?"
+        },
+        {
+            "timestamp": "2025-04-26T22:52:47.900543",
+            "user": "How do I enroll?",
+            "bot": "To enroll, visit our website and complete the enrollment form."
+        },
+        {
+            "timestamp": "2025-04-26T22:52:48.569804",
+            "user": "What are the requirements?",
+            "bot": "You need your transcript, ID, and completed application form."
+        },
+        {
+            "timestamp": "2025-04-26T22:52:49.414497",
+            "user": "What is the enrollment deadline?",
+            "bot": "The deadline for enrollment is June 30."
+        },
+        {
+            "timestamp": "2025-04-26T22:52:50.245071",
+            "user": "Where is the registrar's office?",
+            "bot": "Hi there! What can I help you with regarding enrollment?"
+        },
+        {
+            "timestamp": "2025-04-26T22:53:06.501829",
+            "user": "this sem, how much is the tuition fee?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:06:16.040954",
+            "user": "how much is the tuition fee?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:06:47.042298",
+            "user": "how much is the tuition fee?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:07:41.779399",
+            "user": "how much is the tuition fee?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:07:54.652175",
+            "user": "can i apply late?",
+            "bot": "Late applications are accepted with a penalty. Please contact the admissions office for more details."
+        },
+        {
+            "timestamp": "2025-04-26T23:08:34.744588",
+            "user": "how much is the tuition fee?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:09:00.572853",
+            "user": "how much is the tuition fee?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:09:07.392323",
+            "user": "tuition fee",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:09:11.558274",
+            "user": "enroll",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:09:25.469717",
+            "user": "enrollment deadline for this sem",
+            "bot": "To enroll, visit our website and complete the enrollment form."
+        },
+        {
+            "timestamp": "2025-04-26T23:09:51.854004",
+            "user": "tuition fee for this sem?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:10:24.158282",
+            "user": "tuition fee for this sem",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-26T23:23:10.882404",
+            "user": "how much is the tuition fee?",
+            "bot": "Tuition fee ranges from 25,000-35,000"
+        },
+        {
+            "timestamp": "2025-04-26T23:23:37.110654",
+            "user": "how much is the tuition fee for this sem?",
+            "bot": "Tuition fee ranges from 25,000-35,000"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:08.737773",
+            "user": "How do I enroll?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:09.077289",
+            "user": "What are the requirements?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:14.974037",
+            "user": "can i apply late",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:26.983283",
+            "user": "how much is the tuition fee",
+            "bot": "Tuition fee ranges from 25,000-35,000"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:30.475908",
+            "user": "bye",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-04-27T12:51:32.078891",
+            "user": "hi",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:10.237880",
+            "user": "How do I enroll?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:11.174113",
+            "user": "What are the requirements?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:12.025366",
+            "user": "What is the enrollment deadline?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:12.938613",
+            "user": "Where is the registrar's office?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-05-01T20:20:19.269360",
+            "user": "can i apply late?",
+            "bot": "Late applications are accepted with a penalty. Please contact the admissions office for more details."
+        },
+        {
+            "timestamp": "2025-05-01T20:20:29.222293",
+            "user": "how much is the fee?",
+            "bot": "Tuition fee ranges from 25,000-35,000"
+        },
+        {
+            "timestamp": "2025-05-01T20:25:12.817232",
+            "user": "How do I enroll?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-05-01T20:25:13.221611",
+            "user": "What are the requirements?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-05-01T20:25:13.868392",
+            "user": "What is the enrollment deadline?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        },
+        {
+            "timestamp": "2025-05-01T20:25:14.609744",
+            "user": "Where is the registrar's office?",
+            "bot": "I'm not sure I understand. Can you please rephrase?"
+        }
+    ]
+}
