@@ -1,5 +1,6 @@
 to create the virtual environment(venv): python -m venv venv
 then, to activate the virtual environment(venv): venv\Scripts\activate
+the, install the requirements, type: pip install -r requirements.txt
 
 dapat naka (venv) ung sa terminal before typing in it:
 After updating(editing) the intents.json, 
