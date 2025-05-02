@@ -255,5 +255,185 @@
             "user": "Where is the registrar's office?",
             "bot": "I'm not sure I understand. Can you please rephrase?"
         }
+        {
+            "timestamp": "2025-05-01T21:32:00.123456",
+            "user": "Is there an entrance exam?",
+            "bot": "None, there are no entrance exams. Please check our website for the requirements only."
+        },
+        {
+            "timestamp": "2025-05-01T21:32:10.654321",
+            "user": "How can I get a copy of my registration form?",
+            "bot": "You can download your registration form from your student portal after completing enrollment."
+        },
+        {
+            "timestamp": "2025-05-01T21:32:25.112233",
+            "user": "Can I enroll online?",
+            "bot": "Yes, you can enroll online through our official enrollment portal."
+        },
+        {
+            "timestamp": "2025-05-01T21:32:35.998877",
+            "user": "Who can I contact for help with enrollment?",
+            "bot": "You may contact the admissions office at admissions@example.edu or call (123) 456-7890."
+        },
+        {
+            "timestamp": "2025-05-01T21:32:45.556677",
+            "user": "When does enrollment start?",
+            "bot": "Enrollment begins on May 15. Please complete your requirements before the deadline."
+        },
+        {
+            "timestamp": "2025-05-01T21:32:55.334455",
+            "user": "What courses are offered?",
+            "bot": "You can view the list of available courses on our website under the Academics section."
+        },
+        {
+            "timestamp": "2025-05-01T21:33:05.445566",
+            "user": "Do you accept transferees?",
+            "bot": "Yes, we accept transferees. Please prepare your transcript and certificate of transfer."
+        },
+        {
+            "timestamp": "2025-05-01T21:33:15.778899",
+            "user": "What if I miss the enrollment deadline?",
+            "bot": "If you miss the deadline, you may submit a late enrollment request. Approval is subject to availability and penalties."
+        },
+        {
+            "timestamp": "2025-05-01T21:33:25.667788",
+            "user": "Can I pay tuition in installments?",
+            "bot": "Yes, installment plans are available. Please coordinate with the finance office for setup."
+        }
+        {
+            "timestamp": "2025-05-01T21:34:01.123456",
+            "user": "Are there any scholarships available?",
+            "bot": "Yes, we offer various scholarships based on merit and financial need. You can apply through the scholarships office."
+        },
+        {
+            "timestamp": "2025-05-01T21:34:11.654321",
+            "user": "How do I apply for a scholarship?",
+            "bot": "Visit the scholarship section of our website and fill out the online application form with the required documents."
+        },
+        {
+            "timestamp": "2025-05-01T21:34:21.112233",
+            "user": "When is the scholarship application deadline?",
+            "bot": "The deadline for scholarship applications is June 30. Submit early to avoid delays."
+        },
+        {
+            "timestamp": "2025-05-01T21:34:31.998877",
+            "user": "How do I get my school ID?",
+            "bot": "You can request your school ID after completing enrollment. Proceed to the registrar’s office for processing."
+        },
+        {
+            "timestamp": "2025-05-01T21:34:41.556677",
+            "user": "Is the school ID free?",
+            "bot": "Yes, the first issuance of the school ID is free. Replacement for lost IDs may have a fee."
+        },
+        {
+            "timestamp": "2025-05-01T21:34:51.334455",
+            "user": "Where do I claim my ID?",
+            "bot": "You may claim your school ID at the registrar’s window upon presentation of your registration slip."
+        },
+        {
+            "timestamp": "2025-05-01T21:35:01.445566",
+            "user": "Do students need to wear a uniform?",
+            "bot": "Yes, wearing a school uniform is mandatory for all students during class hours."
+        },
+        {
+            "timestamp": "2025-05-01T21:35:11.778899",
+            "user": "Where can I buy the school uniform?",
+            "bot": "You can purchase the official school uniform at the campus cooperative store or partner suppliers."
+        },
+        {
+            "timestamp": "2025-05-01T21:35:21.667788",
+            "user": "What if my uniform is not ready yet?",
+            "bot": "Students may wear appropriate civilian attire during the first two weeks of classes while waiting for their uniforms."
+        }
+        {
+            "timestamp": "2025-05-01T21:36:01.112233",
+            "user": "Are there dormitories available on campus?",
+            "bot": "Yes, we offer on-campus dormitories for both male and female students. Rooms are available on a first-come, first-served basis."
+        },
+        {
+            "timestamp": "2025-05-01T21:36:11.223344",
+            "user": "How do I apply for a dormitory room?",
+            "bot": "You can apply by visiting the student affairs office and filling out the dormitory application form."
+        },
+        {
+            "timestamp": "2025-05-01T21:36:21.334455",
+            "user": "How much is the dormitory fee per semester?",
+            "bot": "The dormitory fee ranges from ₱3,000 to ₱5,000 per semester depending on the room type."
+        },
+        {
+            "timestamp": "2025-05-01T21:36:31.445566",
+            "user": "When will the class schedules be released?",
+            "bot": "Class schedules are usually released a week before the start of the semester. Please check your student portal for updates."
+        },
+        {
+            "timestamp": "2025-05-01T21:36:41.556677",
+            "user": "Can I request to change my class schedule?",
+            "bot": "Yes, schedule adjustments are allowed during the first week of classes. Visit your department office for assistance."
+        },
+        {
+            "timestamp": "2025-05-01T21:36:51.667788",
+            "user": "Where can I find my complete class schedule?",
+            "bot": "Log in to the student portal and go to the 'My Schedule' section to view your class schedule."
+        },
+        {
+            "timestamp": "2025-05-01T21:37:01.778899",
+            "user": "Is there a campus clinic?",
+            "bot": "Yes, the campus has a clinic located beside the Student Affairs Office. It is open Monday to Friday, 8 AM to 5 PM."
+        },
+        {
+            "timestamp": "2025-05-01T21:37:11.889900",
+            "user": "What services does the campus clinic provide?",
+            "bot": "The clinic provides free consultations, first aid, and referrals to nearby hospitals for serious cases."
+        },
+        {
+            "timestamp": "2025-05-01T21:37:21.990011",
+            "user": "Do I need an appointment to visit the clinic?",
+            "bot": "No appointment is needed for walk-ins. Just proceed to the clinic during office hours for assistance."
+        }
+        {
+            "timestamp": "2025-05-01T21:38:01.123456",
+            "user": "Hello",
+            "bot": "Hello! How can I help you today?"
+        },
+        {
+            "timestamp": "2025-05-01T21:38:11.234567",
+            "user": "Hi there",
+            "bot": "Hi! Feel free to ask me anything about school services or information."
+        },
+        {
+            "timestamp": "2025-05-01T21:38:21.345678",
+            "user": "Good morning",
+            "bot": "Good morning! How can I assist you today?"
+        },
+        {
+            "timestamp": "2025-05-01T21:38:31.456789",
+            "user": "Thank you",
+            "bot": "You're welcome! Let me know if you have any other questions."
+        },
+        {
+            "timestamp": "2025-05-01T21:38:41.567890",
+            "user": "Thanks",
+            "bot": "No problem! I'm always here to help."
+        },
+        {
+            "timestamp": "2025-05-01T21:38:51.678901",
+            "user": "Okay thank you!",
+            "bot": "Anytime! Have a great day!"
+        },
+        {
+            "timestamp": "2025-05-01T21:39:01.789012",
+            "user": "Bye",
+            "bot": "Goodbye! Feel free to return if you need more help."
+        },
+        {
+            "timestamp": "2025-05-01T21:39:11.890123",
+            "user": "Goodbye",
+            "bot": "Take care! Let me know if you have any other questions next time."
+        },
+        {
+            "timestamp": "2025-05-01T21:39:21.901234",
+            "user": "See you later",
+            "bot": "See you! I'm always here when you need help."
+        }
     ]
 }
